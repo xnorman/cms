@@ -1,0 +1,58 @@
+--  create by xleon 20140519 for create database sql  --start
+
+表名 cms_category  信息分类
+  字段名 category_id 			数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT  	备注 分类编号
+  字段名 category_name		数据类型 VARCHAR(100)		约束  											备注 分类名称，不能重复，需要业务检查
+  字段名 category_flag		数据类型 INT 				约束 DEFAULT 0  									备注 分类标识，缺省显示为0，隐藏为-1
+  字段名 category_level		数据类型 INT				约束 DEFAULT 0									备注 分类级别0为初级
+  字段名 category_father_id	数据类型 INT				约束 											备注 父辈分类id
+  字段名 category_date		数据类型 DATETIME			约束 											备注 分类创建时间
+
+表名 cms_content  信息内容
+  字段名 content_id			数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 内容编号
+  字段名 content_intro		数据类型 VARCHAR(500)		约束 											备注 内容索引
+  字段名 content_author		数据类型 INT				约束 											备注 内容作者
+  字段名 content_date			数据类型 DATETIME			约束 											备注 内容创建时间
+  字段名 content_tag			数据类型 VARCHAR(100)		约束 											备注 内容标签
+  字段名 content_text			数据类型 TEXT				约束 											备注 内容
+  字段名 content_visitcount	数据类型 INT				约束 											备注 内容浏览计数
+  字段名 content_flag			数据类型 INT				约束 DEFAULT 0 									备注 内容标识，缺省现实为0，隐藏为-1
+  字段名 content_category		数据类型 INT				约束 											备注 内容所属分类
+
+表名 cms_customer  信息系统用户
+  字段名 customer_id			数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 用户编号
+  字段名 customer_name		数据类型 VARCHAR(100)		约束 NOT NULL									备注 用户账号
+  字段名 customer_sex			数据类型 INT				约束 											备注 用户性别，0为女，1为男，2为保密
+  字段名 customer_email		数据类型 VARCHAR(200)		约束 NOT NULL									备注 用户email
+  字段名 customer_date		数据类型 DATETIME			约束 											备注 用户注册时间
+  字段名 customer_level		数据类型 INT				约束 DEFAULT 1									备注 用户级别，0为待审批用户，1为正常，10000为管理人员
+  字段名 customer_flag		数据类型 INT				约束 DEFAULT 0									备注 用户标识，缺省正常0，屏蔽为-1
+  字段名 customer_pwd			数据类型 VARCHAR(100)		约束 NOT NULL									备注 用户密码
+
+表名 common_ip  通用模块ip库
+  字段名 ip					数据类型 INT				约束 PRIMARY KEY , NOT NULL						备注 ip十进制格式
+  字段名 country				数据类型 VARCHAR(45)		约束 											备注 国家名称
+  字段名 country_id			数据类型 VARCHAR(45)		约束 											备注 国家编号
+  字段名 area					数据类型 VARCHAR(45)		约束 											备注 省名称
+  字段名 area_id				数据类型 VARCHAR(45)		约束 											备注 省编号
+  字段名 region				数据类型 VARCHAR(45)		约束 											备注 地区名称
+  字段名 region_id			数据类型 VARCHAR(45)		约束 											备注 地区编号
+  字段名 city					数据类型 VARCHAR(45)		约束 											备注 城市名称
+  字段名 city_id				数据类型 VARCHAR(45)		约束 											备注 城市编号
+  字段名 county				数据类型 VARCHAR(45)		约束 											备注 乡镇名称
+  字段名 county_id			数据类型 VARCHAR(45)		约束 											备注 乡镇编号
+  字段名 isp					数据类型 VARCHAR(45)		约束 											备注 isp名称
+  字段名 isp_id				数据类型 VARCHAR(45)		约束 											备注 isp编号
+
+表名 common_visit  通用模块访问记录
+  字段名 visit_id				数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 访问编号
+  字段名 visit_date			数据类型 DATETIME			约束 											备注 访问时间
+  字段名 visit_ip				数据类型 VARCHAR(20)		约束 											备注 访问ip
+  字段名 visit_browser		数据类型 VARCHAR(45)		约束 											备注 访问浏览器
+  字段名 visit_os				数据类型 VARCHAR(45)		约束 											备注 访问系统
+  字段名 visit_flag			数据类型 INT				约束 DEFAULT 0									备注 访问标识，缺省普通为0
+  字段名 visit_content		数据类型 VARCHAR(200)		约束 											备注 访问信息
+  字段名 visit_url			数据类型 VARCHAR(200)		约束 											备注 访问url
+  字段名 visit_user			数据类型 INT				约束 											备注 访问用户
+
+--  create by xleon 20140519 for create database sql  --end
