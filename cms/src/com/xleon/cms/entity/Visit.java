@@ -2,7 +2,7 @@ package com.xleon.cms.entity;
 
 import java.util.Date;
 
-public class VisitEntity {
+public class Visit {
 //	  字段名 visit_id				数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 访问编号
 //	  字段名 visit_date			数据类型 DATETIME			约束 											备注 访问时间
 //	  字段名 visit_ip				数据类型 VARCHAR(20)		约束 											备注 访问ip

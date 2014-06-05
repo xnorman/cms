@@ -1,8 +1,8 @@
 package com.xleon.cms.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
-public class CategoryEntity {
+public class Category {
 //	  字段名 category_id			数据类型 INT			约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 分类编号
 //	  字段名 category_name		数据类型 VARCHAR(100)	约束  											备注 分类名称，不能重复，需要业务检查
 //	  字段名 category_flag		数据类型 INT 			约束 DEFAULT 0  									备注 分类标识，缺省显示为0，隐藏为-1
@@ -52,5 +52,4 @@ public class CategoryEntity {
 	public void setCategory_date(Date category_date) {
 		this.category_date = category_date;
 	}
-	
 }

@@ -1,5 +1,12 @@
 package com.xleon.cms.operate;
 
-public class CustomerOperate {
+import java.sql.SQLException;
 
+public class CustomerOperate extends MysqlTemplate {
+
+	@Override
+	void insideOperate() throws SQLException {
+		
+	}
+	
 }

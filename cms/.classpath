@@ -17,5 +17,26 @@
 	<classpathentry kind="lib" path="mylibs/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="mylibs/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="lib" path="mylibs/sqlitejdbc-v056.jar"/>
+	<classpathentry kind="lib" path="mylibs/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="mylibs/avro-1.7.6.jar"/>
+	<classpathentry kind="lib" path="mylibs/commons-compress-1.5.jar"/>
+	<classpathentry kind="lib" path="mylibs/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="mylibs/hibernate-commons-annotations-4.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="mylibs/hibernate-core-4.3.5.Final.jar"/>
+	<classpathentry kind="lib" path="mylibs/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="mylibs/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="mylibs/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="mylibs/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="mylibs/jboss-logging-3.1.4.GA.jar"/>
+	<classpathentry kind="lib" path="mylibs/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="mylibs/lucene-core-3.6.2.jar"/>
+	<classpathentry kind="lib" path="mylibs/paranamer-2.3.jar"/>
+	<classpathentry kind="lib" path="mylibs/postgresql-9.3-1101.jdbc3.jar"/>
+	<classpathentry kind="lib" path="mylibs/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="mylibs/xml-apis-1.3.03.jar"/>
+	<classpathentry kind="lib" path="mylibs/jms-1.1.jar"/>
+	<classpathentry kind="lib" path="mylibs/jsr250-api-1.0.jar"/>
+	<classpathentry kind="lib" path="mylibs/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="mylibs/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

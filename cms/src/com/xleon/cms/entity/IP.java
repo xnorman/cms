@@ -1,6 +1,6 @@
 package com.xleon.cms.entity;
 
-public class IPEntity {
+public class IP {
 //	  字段名 ip					数据类型 INT				约束 PRIMARY KEY , NOT NULL						备注 ip十进制格式
 //	  字段名 country				数据类型 VARCHAR(45)		约束 											备注 国家名称
 //	  字段名 country_id			数据类型 VARCHAR(45)		约束 											备注 国家编号

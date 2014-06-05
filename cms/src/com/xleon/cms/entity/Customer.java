@@ -2,7 +2,7 @@ package com.xleon.cms.entity;
 
 import java.util.Date;
 
-public class CustomerEntity {
+public class Customer {
 //	  字段名 customer_id			数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 用户编号
 //	  字段名 customer_name		数据类型 VARCHAR(100)		约束 NOT NULL									备注 用户账号
 //	  字段名 customer_sex			数据类型 INT				约束 											备注 用户性别，0为女，1为男，2为保密

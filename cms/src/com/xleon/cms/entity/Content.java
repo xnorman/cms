@@ -2,7 +2,7 @@ package com.xleon.cms.entity;
 
 import java.util.Date;
 
-public class ContentEntity {
+public class Content {
 //	  字段名 content_id			数据类型 INT				约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 内容编号
 //	  字段名 content_intro		数据类型 VARCHAR(500)		约束 											备注 内容索引
 //	  字段名 content_author		数据类型 INT				约束 											备注 内容作者
