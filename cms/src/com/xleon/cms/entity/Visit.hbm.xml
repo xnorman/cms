@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xleon.cms.entity">
+	<class name="Visit" table="common_visit">
+		<id name="visit_id" column="visit_id">
+			<generator class="identity" />
+		</id>
+		<property name="visit_date" type="java.util.Date">
+			<column name="visit_date" />
+		</property>
+		<property name="visit_ip" type="java.lang.String">
+			<column name="visit_ip" length="20" />
+		</property>
+		<property name="visit_browser" type="java.lang.String">
+			<column name="visit_browser" length="45" />
+		</property>
+		<property name="visit_os" type="java.lang.String">
+			<column name="visit_os" length="45" />
+		</property>
+		<property name="visit_flag">
+			<column name="visit_flag" />
+		</property>
+		<property name="visit_content" type="java.lang.String">
+			<column name="visit_content" length="200" />
+		</property>
+		<property name="visit_url" type="java.lang.String">
+			<column name="visit_url" length="200" />
+		</property>
+		<property name="visit_user">
+			<column name="visit_user" />
+		</property>
+	</class>
+</hibernate-mapping>

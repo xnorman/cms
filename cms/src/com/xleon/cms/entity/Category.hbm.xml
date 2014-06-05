@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xleon.cms.entity">
+	<class name="Category" table="cms_category">
+		<id name="category_id" column="category_id">
+			<generator class="identity" />
+		</id>
+		<property name="category_name" type="java.lang.String">
+			<column name="category_name" length="100" not-null="true" />
+		</property>
+		<property name="category_flag">
+			<column name="category_flag" />
+		</property>
+		<property name="category_level">
+			<column name="category_level" />
+		</property>
+		<property name="category_father_id">
+			<column name="category_father_id" />
+		</property>
+		<property name="category_date" type="java.util.Date">
+			<column name="category_date" />
+		</property>
+	</class>
+</hibernate-mapping>

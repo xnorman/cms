@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xleon.cms.entity">
+	<class name="Customer" table="cms_customer">
+		<id name="customer_id" column="customer_id">
+			<generator class="identity" />
+		</id>
+		<property name="customer_name" type="java.lang.String">
+			<column name="customer_name" length="100" not-null="true" />
+		</property>
+		<property name="customer_sex">
+			<column name="customer_sex" />
+		</property>
+		<property name="customer_email" type="java.lang.String">
+			<column name="customer_email" length="200" not-null="true" />
+		</property>
+		<property name="customer_date" type="java.util.Date">
+			<column name="customer_date" />
+		</property>
+		<property name="customer_level">
+			<column name="customer_level" />
+		</property>
+		<property name="customer_flag">
+			<column name="customer_flag" />
+		</property>
+		<property name="customer_pwd" type="java.lang.String">
+			<column name="customer_pwd" length="100" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

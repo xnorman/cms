@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.xleon.cms.entity">
+	<class name="IP" table="common_ip">
+		<id name="ip" column="ip">
+			<generator class="identity" />
+		</id>
+		<property name="country" type="java.lang.String">
+			<column name="country" length="45" />
+		</property>
+		<property name="country_id" type="java.lang.String">
+			<column name="country_id" length="45" />
+		</property>
+		<property name="area" type="java.lang.String">
+			<column name="area" length="45" />
+		</property>
+		<property name="area_id" type="java.lang.String">
+			<column name="area_id" length="45" />
+		</property>
+		<property name="region" type="java.lang.String">
+			<column name="region" length="45" />
+		</property>
+		<property name="region_id" type="java.lang.String">
+			<column name="region_id" length="45" />
+		</property>
+		<property name="city" type="java.lang.String">
+			<column name="city" length="45" />
+		</property>
+		<property name="city_id" type="java.lang.String">
+			<column name="city_id" length="45" />
+		</property>
+		<property name="county" type="java.lang.String">
+			<column name="county" length="45" />
+		</property>
+		<property name="county_id" type="java.lang.String">
+			<column name="county_id" length="45" />
+		</property>
+		<property name="isp" type="java.lang.String">
+			<column name="isp" length="45" />
+		</property>
+		<property name="isp_id" type="java.lang.String">
+			<column name="isp_id" length="45" />
+		</property>
+	</class>
+</hibernate-mapping>
