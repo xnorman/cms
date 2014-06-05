@@ -3,9 +3,11 @@
 
 <hibernate-mapping package="com.xleon.cms.entity">
 	<class name="Visit" table="common_visit">
+	
 		<id name="visit_id" column="visit_id">
 			<generator class="identity" />
 		</id>
+		
 		<property name="visit_date" type="java.util.Date">
 			<column name="visit_date" />
 		</property>
@@ -30,5 +32,6 @@
 		<property name="visit_user">
 			<column name="visit_user" />
 		</property>
+		
 	</class>
 </hibernate-mapping>

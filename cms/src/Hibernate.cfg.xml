@@ -42,7 +42,11 @@
         <property name="hibernate.c3p0.acquire_increment">1</property>  
         <property name="hibernate.c3p0.idle_test_periodt">10</property>   -->
            
-        <mapping resource="com/xleon/cms/entity/Category.hbm.xml" />  
+        <mapping resource="com/xleon/cms/entity/Category.hbm.xml" />
+        <mapping resource="com/xleon/cms/entity/Content.hbm.xml" /> 
+        <mapping resource="com/xleon/cms/entity/Customer.hbm.xml" /> 
+        <mapping resource="com/xleon/cms/entity/IP.hbm.xml" /> 
+        <mapping resource="com/xleon/cms/entity/Visit.hbm.xml" /> 
           
     </session-factory>  
 </hibernate-configuration>
