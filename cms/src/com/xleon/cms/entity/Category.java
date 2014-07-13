@@ -1,14 +1,19 @@
 package com.xleon.cms.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Category {
+public class Category implements Serializable {
 //	  字段名 category_id			数据类型 INT			约束 PRIMARY KEY , NOT NULL , AUTO_INCREMENT		备注 分类编号
 //	  字段名 category_name		数据类型 VARCHAR(100)	约束  											备注 分类名称，不能重复，需要业务检查
 //	  字段名 category_flag		数据类型 INT 			约束 DEFAULT 0  									备注 分类标识，缺省显示为0，隐藏为-1
 //	  字段名 category_level		数据类型 INT			约束 DEFAULT 0									备注 分类级别0为初级
 //	  字段名 category_father_id	数据类型 INT			约束 											备注 父辈分类id
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int category_id ; 
 	private String category_name;
 	private int category_flag;

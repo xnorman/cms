@@ -5,4 +5,7 @@ encoding//src/com/xleon/cms/entity/Content.java=UTF-8
 encoding//src/com/xleon/cms/entity/Customer.java=UTF-8
 encoding//src/com/xleon/cms/entity/IP.java=UTF-8
 encoding//src/com/xleon/cms/entity/Visit.java=UTF-8
+encoding//src/com/xleon/cms/operate/CategoryOperate.java=UTF-8
+encoding//src/com/xleon/cms/operate/HibernateUtil.java=UTF-8
 encoding//src/com/xleon/cms/operate/MysqlTemplate.java=UTF-8
+encoding/mylibs=UTF-8
