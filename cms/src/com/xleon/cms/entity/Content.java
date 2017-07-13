@@ -77,5 +77,76 @@ public class Content {
 	public void setContent_category(int content_category) {
 		this.content_category = content_category;
 	}
-	
+
+	@Override
+	public String toString() {
+		final StringBuffer sb = new StringBuffer("Content{");
+		sb.append("content_id=").append(content_id);
+		sb.append(", content_intro='").append(content_intro).append('\'');
+		sb.append(", content_author=").append(content_author);
+		sb.append(", content_date=").append(content_date);
+		sb.append(", content_tag='").append(content_tag).append('\'');
+		sb.append(", content_text='").append(content_text).append('\'');
+		sb.append(", content_visitcount=").append(content_visitcount);
+		sb.append(", content_flag=").append(content_flag);
+		sb.append(", content_category=").append(content_category);
+		sb.append('}');
+		return sb.toString();
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o == null || getClass() != o.getClass()) {
+			return false;
+		}
+
+		Content content = (Content) o;
+
+		if (content_id != content.content_id) {
+			return false;
+		}
+		if (content_author != content.content_author) {
+			return false;
+		}
+		if (content_visitcount != content.content_visitcount) {
+			return false;
+		}
+		if (content_flag != content.content_flag) {
+			return false;
+		}
+		if (content_category != content.content_category) {
+			return false;
+		}
+		if (content_intro != null ? !content_intro.equals(content.content_intro)
+				: content.content_intro != null) {
+			return false;
+		}
+		if (content_date != null ? !content_date.equals(content.content_date)
+				: content.content_date != null) {
+			return false;
+		}
+		if (content_tag != null ? !content_tag.equals(content.content_tag)
+				: content.content_tag != null) {
+			return false;
+		}
+		return content_text != null ? content_text.equals(content.content_text)
+				: content.content_text == null;
+	}
+
+	@Override
+	public int hashCode() {
+		int result = content_id;
+		result = 31 * result + (content_intro != null ? content_intro.hashCode() : 0);
+		result = 31 * result + content_author;
+		result = 31 * result + (content_date != null ? content_date.hashCode() : 0);
+		result = 31 * result + (content_tag != null ? content_tag.hashCode() : 0);
+		result = 31 * result + (content_text != null ? content_text.hashCode() : 0);
+		result = 31 * result + content_visitcount;
+		result = 31 * result + content_flag;
+		result = 31 * result + content_category;
+		return result;
+	}
 }
